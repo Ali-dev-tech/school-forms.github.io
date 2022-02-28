@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADMIN PANEL</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.container-01 {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	background: #ebf5fc;
+}
+.container-01 h2 {
+	position: relative;
+	width: 50%;
+	text-align: center;
+	z-index: 11;
+	color: #32a3b1;
+	font-size: 25px;
+	font-weight: 700;
+	text-align: center;
+	border-radius: 15px;
+	padding: 5px 8px;
+	font-size: 25px;
+	box-shadow: -6px -6px 20px rgba(255,255,255,1),
+				6px 6px 20px rgba(0,0,0,0.1);
+}
+.container-01 .neumorphic-card {
+	width: 320px;
+	height: 500px;
+	margin: 28px;
+	padding: 40px 30px;
+	background: #ebf5fc;
+	border-radius: 40px;
+	box-shadow: -6px -6px 20px rgba(255,255,255,1),
+				6px 6px 20px rgba(0,0,0,0.1);
+}
+.container-01 .neumorphic-card:hover {
+	box-shadow: inset -6px -6px 10px rgba(255,255,255,0.5),
+				inset 6px 6px 20px rgba(0,0,0,0.05);
+}
+.container-01 .neumorphic-card .imgBox {
+	position: relative;
+	text-align: center;
+}
+.container-01 .neumorphic-card .imgBox i {
+	font-size: max(80px);
+	color: #32a3b1;
+}
+.container-01 .neumorphic-card .contentBox {
+	position: relative;
+	margin-top: 20px;
+	text-align:center;	
+}
+.container-01 .neumorphic-card .contentBox h3 {
+	color: #32a3b1;
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-size: 1.4em;
+}
+.container-01 .neumorphic-card .contentBox p {
+	color: #32a3b1;	
+}
+.container-01 .neumorphic-card .contentBox a {
+	display: inline-block;
+	padding: 10px 20px;
+	margin-top: 2rem;
+	border-radius: 40px;
+	color: #32a3b1;
+	font-size: 16px;
+	text-decoration: none;
+	box-shadow: -4px -4px 15px rgba(255,255,255,1),
+				4px 4px 15px rgba(0,0,0,0.1);
+}
+.container-01 .neumorphic-card .contentBox a:hover {
+	box-shadow: inset-4px -4px 10px rgba(255,255,255,0.5),
+				inset 4px 4px 10px rgba(0,0,0,0.1);
+}
+.container-01 .neumorphic-card .contentBox a:hover span {
+	display: block;
+	transform: scale(0.98);	
+}
+.container-01 .neumorphic-card:hover .imgBox,
+.container-01 .neumorphic-card:hover .contentBox {
+	transform: scale(0.98);
+}
+.container-01 p {
+	z-index: 12;
+	margin: 20px auto 10px;
+	position: relative;
+	color: #32a3b1;
+}
+.container-01 p span {
+	font-weight: 700;
+
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container-01">
+		<h2>ADMIN PANEL</h2>
+		<div class="neumorphic-card">
+			<div class="imgBox">
+				<i class="fa fa-pencil-ruler"></i>
+			</div>
+			<div class="contentBox">
+				
+				<a href="room_id.html"><span>ROOM FORM</span></a>
+				<a href="user.html"><span>USER FORM</span></a>
+				<a href="period.html"><span>PERIOD FORM</span></a>
+			</div>
+		</div>
+	
+	</div>
+
+
+  <script>
+    VanillaTilt.init(document.querySelector(".glassmorphic-card"), {
+		max: 15,
+		speed: 200,
+		glare: true,
+		"max-glare": 1,
+	});
+  </script>
+</body>
+</html>
